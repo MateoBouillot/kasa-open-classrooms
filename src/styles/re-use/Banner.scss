@@ -1,0 +1,24 @@
+@import '../mixin.scss';
+
+.banner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px; 
+
+    &__img {
+        width: 85%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: brightness(70%);
+    }
+
+    &__title {
+        color: white;
+        @include Montserrat-500;
+        font-size: 48px;
+        position: relative;
+        bottom: 160px;
+    }
+}

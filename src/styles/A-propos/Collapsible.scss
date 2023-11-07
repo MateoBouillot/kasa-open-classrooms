@@ -1,0 +1,36 @@
+@import '../mixin.scss';
+@import '../keyframe.scss';
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__collapsible {
+        background-color: $primarycolor;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        width: 70%;
+        height: 50px;
+        text-align: left;
+        @include Montserrat-500;
+        font-size: 24px;
+        padding-left: 15px;
+        z-index: 2;
+    }
+
+    &__content {
+        overflow: hidden;
+        background-color: #F6F6F6;
+        width: 70%;
+        @include Montserrat-500;
+        font-size: 16px;
+        animation: collapse-border 400ms forwards;
+        
+        &__animation {
+            animation: collapse-on 500ms forwards;
+            margin: 20px;
+        }
+    }
+}
