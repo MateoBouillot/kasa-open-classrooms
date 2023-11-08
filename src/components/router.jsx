@@ -1,17 +1,10 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Homepage from './Homepage/homePage'
 import Apropos from './A-propos/a-Propos'
-import data from '../datas/logements.json'
 import Annonce from './logement/Annonce'
 import { useState } from "react"
-let randomAnnonce = []
 
-for (let i=0; i<6; i++) {
-    let min = Math.ceil(0)
-    let max = Math.floor(19)
-    randomAnnonce.push(Math.floor(Math.random() * (max - min + 1) + min))
-}
-console.log(data[1].id)
+
 
 
 function Rout() { 

@@ -1,0 +1,44 @@
+@import '../mixin.scss';
+
+.carousel {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+
+    &__img {
+        width: 85%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+
+    }
+
+    &__right {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 120px;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    &__left {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 120px;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    &__counter {
+        position: absolute;
+        color: white;
+        bottom: 10px;
+        @include Montserrat-500;
+        font-size: 18px;
+    }
+}
