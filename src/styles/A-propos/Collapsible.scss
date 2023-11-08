@@ -1,12 +1,9 @@
 @import '../mixin.scss';
 @import '../keyframe.scss';
 
-.info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    &__collapsible {
+
+    .collapsible {
         background-color: $primarycolor;
         color: white;
         border: none;
@@ -20,7 +17,7 @@
         z-index: 2;
     }
 
-    &__content {
+    .content {
         overflow: hidden;
         background-color: #F6F6F6;
         width: 70%;
@@ -33,4 +30,4 @@
             margin: 20px;
         }
     }
-}
+
