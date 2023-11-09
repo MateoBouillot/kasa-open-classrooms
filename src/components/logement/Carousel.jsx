@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 
 function Carousel(props) {
+
     let imgList = props.info.pictures
     const isCarousel = imgList.length > 1
 

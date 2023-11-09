@@ -1,8 +1,8 @@
-import Header from '../re-use/HeaderNav.jsx'
-import Banner from '../re-use/Banner.jsx'
-import Footer from '../re-use/Footer.jsx'
-import Collapsible from './Collapsible.jsx'
-import '../../styles/A-propos/a-propos.scss'
+import Header from '../components/re-use/HeaderNav.jsx'
+import Banner from '../components/re-use/Banner.jsx'
+import Footer from '../components/re-use/Footer.jsx'
+import Collapsible from '../components/A-propos/Collapsible.jsx'
+import '../styles/A-propos/a-propos.scss'
 
 function Apropos() {
     return <>
