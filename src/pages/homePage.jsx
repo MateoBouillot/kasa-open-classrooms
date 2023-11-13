@@ -20,7 +20,7 @@ function Homepage() {
         <Banner src='Accueil' txt='Chez vous, partout et ailleurs'/>
         <div className='table-annonce'>
             {randomAnnonce.map((i, index) =>
-            <Link to={`annonce/${data[i].id}`} key={data[i].id += index} className='table-annonce__link'>
+            <Link to={`annonce/${data[i].id}`} key={data[i].id + index} className='table-annonce__link'>
                 <ListLoc image={data[i].cover} title={data[i].title}/>
             </Link>)}
         </div>

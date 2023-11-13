@@ -4,9 +4,9 @@ import ArrowLeft from '../../assets/arrowleft.png'
 import { useState } from 'react'
 
 
-function Carousel(props) {
+function Carousel({info}) {
 
-    let imgList = props.info.pictures
+    let imgList = info.pictures
     const isCarousel = imgList.length > 1
 
     const [current, setCurrent] = useState(0)
