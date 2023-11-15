@@ -7,10 +7,11 @@
     margin: 20px 0px; 
     height: 200px;
     padding-bottom: 40px;
+    position: relative;
 
     &__img {
         width: 85%;
-        height: 200px;
+        height: 100%;
         object-fit: cover;
         border-radius: 25px;
         filter: brightness(70%);
@@ -20,7 +21,21 @@
         color: white;
         @include Montserrat-500;
         font-size: 48px;
-        position: relative;
-        bottom: 160px;
+        position: absolute;
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+    height: 110px;
+
+        &__title {
+            font-size: 24px;
+            text-align: left;
+            width: 50%;
+            bottom: 50px;
+            left: 70px;
+        }
     }
 }

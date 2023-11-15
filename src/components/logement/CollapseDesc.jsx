@@ -22,14 +22,14 @@ function CollapseDesc({info, type}) {
         else setHeight(0)
     }, [open])
       
-console.log(content)
+
     return <div className='collapse'>
         <button type='button' className='collapse__btn'>{type}</button>
         <img src={arrow} alt='fleche' className={open ? 'collapse__arrow--open' : 'collapse__arrow'} onClick={handleClick}></img>
         <div className={open ? 'collapse__content--open' : 'collapse__content'} style={{height}}>
             <div ref={ref}>
                 {open && (<div>
-                    {content.map((desc, index) => <div key={desc.length^2*index}>{desc}</div>)}
+                    {content.map((desc, index) => <div key={desc.length*index^2}>{desc}</div>)}
                 </div>)}
             </div>
         </div>

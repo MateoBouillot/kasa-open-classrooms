@@ -19,7 +19,6 @@
         @include Montserrat-500;
         font-size: 24px;
         padding-left: 15px;
-        position: relative;
     }
 
     &__arrow {
@@ -54,6 +53,30 @@
             transition: 0.2s ease-in;
             text-align: center;
             padding: 20px 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .collapsible {
+
+
+        &__btn {
+            width: 90%;
+        }
+
+        &__arrow {
+            right: 8%;
+
+            &--open {
+                right: 8%;
+            }
+        }
+
+        &__content {
+            &--open {
+                width: 90%;
+            }
         }
     }
 }

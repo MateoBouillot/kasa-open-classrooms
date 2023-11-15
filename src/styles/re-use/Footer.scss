@@ -21,3 +21,11 @@
         top: 25px;
     }
 }
+
+@media (max-width: 768px) {
+    .footer {
+        &__txt {
+            width: 195px;
+        }
+    }
+}

@@ -6,3 +6,10 @@
     margin-bottom: 40px;
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .collapsibles {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
