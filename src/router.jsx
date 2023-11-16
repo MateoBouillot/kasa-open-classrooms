@@ -1,12 +1,8 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Homepage from './pages/homePage'
-import Apropos from './pages/aPropos'
+import Homepage from './pages/HomePage'
+import Apropos from './pages/APropos'
 import Logement from './pages/Logement'
-import Error from './pages/error'
-
-
-
-
+import Error from './pages/Error'
 
 function Rout() { 
     

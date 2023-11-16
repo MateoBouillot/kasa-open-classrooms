@@ -6,6 +6,7 @@ import UpperDesc from '../components/logement/UpperDesc.jsx'
 import CollapseDesc from '../components/logement/CollapseDesc.jsx'
 import { useParams } from 'react-router-dom'
 import '../styles/logement/Logement.scss'
+import { Navigate } from 'react-router-dom';
 
 function Annonce() {
     const {id} = useParams()
@@ -15,6 +16,12 @@ function Annonce() {
         return data.id === id
     }
     let loc = datas.find(idfind)
+    
+    if (loc === undefined) {
+        return <Navigate to='*' />
+    }
+
+
 
     return <>
         <Header />
