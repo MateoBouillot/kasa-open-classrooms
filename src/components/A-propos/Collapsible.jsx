@@ -6,7 +6,7 @@ import arrow from '../../assets/Vector.png'
 
 
 
-function Collapsible(props) {
+function Collapsible(title, txt) {
     const [open, setOpen] = useState(false)
     const [height, setHeight] = useState(0)
 
@@ -23,11 +23,11 @@ function Collapsible(props) {
     }, [open])
 
     return <div className='collapsible'>
-        <button type="button" className="collapsible__btn" >{props.title}</button>
+        <button type="button" className="collapsible__btn" >{title}</button>
         <img src={arrow} alt='fleche' className={open ? "collapsible__arrow--open" : 'collapsible__arrow'} onClick={handleClick}></img>
         <div className={open ? "collapsible__content--open" : "collapsible__content"} style={{height}}>
             <div ref={ref}>
-                {open && <div>{props.txt}</div>}
+                {open && <div>{txt}</div>}
             </div>
         </div>
     </div>
