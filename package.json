@@ -2,7 +2,7 @@
   "name": "kasa-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MateoBouillot.github.com/op-react-kasa",
+  "homepage": "http://MateoBouillot.github.io/op-react-kasa",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
