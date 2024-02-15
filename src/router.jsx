@@ -1,6 +1,6 @@
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Homepage from './pages/HomePage'
-import Apropos from './pages/APropos'
+import Homepage from './pages/homePage'
+import Apropos from './pages/aPropos'
 import Logement from './pages/Logement'
 import Error from './pages/Error'
 
