@@ -1,4 +1,4 @@
-import ImgAccueil from '../../assets/image-banner-1.png'
+import ImgAccueil from '../../assets/Image-banner-1.png'
 import '../../styles/re-use/Banner.scss'
 import ImgApropos from '../../assets/img-banner-apropos.png'
 let ImgBanner = ''
